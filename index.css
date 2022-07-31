@@ -1,0 +1,224 @@
+/* *{margin: 0 auto;} */
+.app-wrapper {
+    margin: 0px auto;
+    display: grid;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 370px;
+    grid-template-areas:
+        'h h'
+        'n c';
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 12fr;
+}
+
+.app-wrapper-content {
+    grid-area: c;
+    background-color: yellow;
+}
+
+.header {
+    grid-area: h;
+    background-color: #2B4059;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    width: 150px;
+    height: 60px;
+}
+
+.header div {
+    position: relative;
+}
+.header_search__input {
+    /* display: block; */
+    background-color: #5C6376;
+    border-radius: 15px;
+    width: 12rem;
+    height: 1.3rem;
+    padding-left: 10px;
+    padding-right: 4rem;
+    outline:none;
+    border: none;
+    color: white;
+}
+
+.header_search__input:hover { 
+    box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.10)
+}
+
+.header_search__button {
+  position: relative;
+  height: 1.4rem;
+  right: 3.6rem;
+  top: 0.1rem;
+  border-radius: 15px;
+  border: none;
+  font-family: 'Lato900';
+}
+
+.header_search__button:active { 
+    transform: scale(0.9);
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);    */
+}
+
+.header_profile {
+    padding: 0.1rem;
+    margin-right: 1rem;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+}
+
+.header_profile:hover  {
+    border: 2px solid grey;
+    transition-duration: 0.5s;
+}
+
+.header_profile:hover .header_profile_name {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.header_profile_photo {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid #D9D9D9;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 0.3rem;
+}
+
+.header_profile_name {
+    font-family: 'Lato900'; 
+    color: white;
+    transition-duration: 0.5s;
+    margin-right: 10px;
+}
+
+.button { 
+    width: 76px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 15px;
+    transform: scale(1); 
+    transition-duration: 0.5s;  
+}
+
+.button:hover {
+    transform: scale(1.2); 
+    transition-duration: 0.5s;   
+}
+
+.button:active {
+    transform: scale(0.8); 
+    transition-duration: 0.1s;   
+}
+
+.button_signin {
+    border: 2px solid #888888;
+    background-color: #D9D9D9;
+    color: 000000;
+    font-family: 'Lato900'; 
+    transform: scale(1); 
+    transition-duration: 0.5s;  
+}
+
+.button_signup {
+    border: 2px solid #FFFFFF;
+    background-color: #223247;
+    color: #FFFFFF;
+    font-family: 'Lato900'; 
+}
+
+
+
+.nav {
+    padding-top: 10px;
+    text-align: left;
+    background-color: #E1E1E1;
+    
+}
+
+.nav div {
+    display: grid;
+    justify-content: left;
+    text-align: center;
+}
+
+.item {
+    width: 100px;
+    text-align: left;
+    color: #4D4D4D;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 3px 0px 5px 10px;
+    border-radius: 15px;
+    
+
+    font-family: 'Lato900';
+    transition-duration:0.1s;
+}
+
+
+.item:hover {
+    background-color: rgb(192,192,192) ;
+    width: 100%;
+    animation: wipe 100ms forwards;
+    cursor: pointer;
+}
+
+@keyframes wipe {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100px;
+      }
+}
+
+.activeLink{
+    width: 100px;
+    text-align: left;
+    color: #FAFAFA;
+    text-decoration: none;
+    background-color: #1D2E59;
+    border-radius: 15px;
+    margin-left: 10px;
+    padding: 3px 0px 5px 10px;
+    animation: wipe 300ms forwards;
+    cursor: pointer;
+    
+    font-size: 18px;
+    font-family: 'Lato900';
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Lato900';
+    src: url(fonts/Lato-Black.ttf);
+}
+@font-face {
+    font-family: 'Lato700' ;
+    src: url(fonts/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: 'Lato400' ;
+    src: url(fonts/Lato-Light.ttf);
+}
+@font-face {
+    font-family: 'Lato300' ;
+    src: url(fonts/Lato-Thin.ttf);
+}
