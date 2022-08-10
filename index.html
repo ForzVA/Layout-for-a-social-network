@@ -7,47 +7,96 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div class='app-wrapper'>
-        <div class="app-wrapper-content">
-            <header class='header'>
-                <img class="header_logo" src='./imgaes/logo.svg' />
-                <form>
-                    <input class="header_search__input">
-                    <button class="header_search__button">Search</button>           
-                </form>          
-                <div class="header_profile">
-                    <img class="header_profile_photo" src="https://klike.net/uploads/posts/2019-05/1556945414_2.jpg" />
-                    <div class="header_profile_name"> Andruxa </div>
-                    <!-- <button class="button button_signin">SignIn</button>
-                    <button class="button button_signup">SignUp</button> -->
-                </div>              
-            </header>
-            <nav class='nav'>
-                
-                <div>
-                  <a to='/profile' class='item'>Profile</a>
-                </div>
-                <div>
-                  <a to='/dialogs' class='activeLink'>Messages</a>
-                </div>
-                <div>
-                  <a to='/users' class='item'>Users</a>
-                </div>
-                <div>
-                  <a to='/news' class='item'>News</a>
-                </div>
-                <div>
-                  <a to='/music' class='item'>Music</a>
-                </div>
-                <div>
-                  <a to='/settings' class='item'>Settings</a>
-                </div>
-                <div>
-                  <a to='/friends' class='item'>Friends</a>
-                </div>
-              </nav>
+  <div class='app-wrapper'>
+    <header class='header'>
+      <img class="header_logo" src='./svg/logo.svg' />
+      <form>
+        <input class="header_search__input">
+        <button class="header_search__button">Search</button>
+      </form>
+      <div class="header_profile">
+        <img class="header_profile_photo" src="https://klike.net/uploads/posts/2019-05/1556945414_2.jpg" />
+        <div class="header_profile_name"> Andruxa </div>
+        <!-- <button class="button button_signin">SignIn</button>
+                <button class="button button_signup">SignUp</button> -->
+      </div>
+    </header>
+    
+    
+    
+    
+    <div class="navigation">
+      <nav class='nav'>
+        <div>
+          <a to='/profile' class='item'>Profile</a>
         </div>
+        <div>
+          <a to='/dialogs' class='activeLink'>Messages</a>
+        </div>
+        <div>
+          <a to='/users' class='item'>Users</a>
+        </div>
+        <div>
+          <a to='/news' class='item'>News</a>
+        </div>
+        <div>
+          <a to='/music' class='item'>Music</a>
+        </div>
+        <div>
+          <a to='/settings' class='item'>Settings</a>
+        </div>
+        <div>
+          <a to='/friends' class='item'>Friends</a>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="app-wrapper-content">
+      <div class="profile_avatar">
+        <img class="profile_avatar_img" src='https://mirpozitiva.ru/wp-content/uploads/2019/11/1472042719_15.jpg'
+          alt='123' />
+        <div class="profile_avatar_buttons">
+          <button class="profile_avatar_button__message">Message</button>
+          <button class="profile_avatar_button_down-drop" >
+            <img src="./svg/three-dots-vertical.svg" />
+          </button>
+        </div>
+        
+      </div>
+    
+    
+      <div class="profile-description">
+        <span class="profile-description__name"> Alexander Vasileuski</span>
+        <span class="profile-description__depiction"><span style="color: rgb(156, 156, 156) ;">Status:</span> Good Morining</span>
+        <span class="profile-description__title">Social networks:</span>
+        <!-- <ProfileStatus status={props.status} updateStatus={props.updateStatus} /> -->
+        <ul class="profile-description__networks_block">
+          <li class="profile-description__networks_element"> facebook: {props.profile.contacts.facebook} </li>
+          <li class="profile-description__networks_element"> twitter: {props.profile.contacts.twitter} </li>
+          <li class="profile-description__networks_element"> instagram: {props.profile.contacts.instagram} </li>
+          <li class="profile-description__networks_element"> github: {props.profile.contacts.github} </li>
+        </ul>
+        <div>12314</div>
+      </div>
+      
+      <div class="create-post">
+        <div class="create-post__new-post">Create post</div>
+        <div class="create-post__textarea__wrapper">
+          <textarea class="create-post__textarea" placeholder='Enter text' name="" id="" ></textarea>
+        </div>
+        <button class="create-post__submit-post--button">Publish</button>
+      </div>
+
+      <div class="posts">
+        <div className={s.all_info}>
+          <div class="posts__my-posts">My posts</div>
+        </div>
+      </div>
+    
+    </div>
+    </div>
     </div>
 </body>
 </html>
