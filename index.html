@@ -23,10 +23,10 @@
                 <button class="button button_signup">SignUp</button> -->
       </div>
     </header>
-    
-    
-    
-    
+
+
+
+
     <div class="navigation">
       <nav class='nav'>
         <div>
@@ -52,24 +52,78 @@
         </div>
       </nav>
     </div>
-    
+
     <div class="app-wrapper-content">
       <div class="profile_avatar">
         <img class="profile_avatar_img" src='https://mirpozitiva.ru/wp-content/uploads/2019/11/1472042719_15.jpg'
           alt='123' />
         <div class="profile_avatar_buttons">
           <button class="profile_avatar_button__message">Message</button>
-          <button class="profile_avatar_button_down-drop" >
+          <button class="profile_avatar_button_drop-down">
             <img src="./svg/three-dots-vertical.svg" />
           </button>
+          <ul class="profile_avatar_button_drop-down__elements">
+            <li><a href="">Add Friend</a></li>
+            <li><a href="">Delete Friend</a></li>
+            <li><a href="">DoDoDo</a></li>
+          </ul>
         </div>
-        
       </div>
-    
-    
+      <div class="friends-block">
+        <div class="friends-block__title">Friends</div>
+        <ul class="friends-block__friends">
+          <li class="friends-block__friend">
+            <img class="friends-block__friend__ava"
+              src="https://papik.pro/uploads/posts/2021-09/1631997549_6-papik-pro-p-krutie-avatarki-risunki-6.jpg"></img>
+            <div class="friends-block__friend__name">Andry</div>
+          </li>
+          <li class="friends-block__friend">
+            <img class="friends-block__friend__ava"
+              src="https://papik.pro/uploads/posts/2021-09/1631997549_6-papik-pro-p-krutie-avatarki-risunki-6.jpg"></img>
+            <div class="friends-block__friend__name">Alex</div>
+          </li>
+          <li class="friends-block__friend">
+            <img class="friends-block__friend__ava"
+              src="https://papik.pro/uploads/posts/2021-09/1631997549_6-papik-pro-p-krutie-avatarki-risunki-6.jpg"></img>
+            <div class="friends-block__friend__name">Denys</div>
+          </li>
+          <li class="friends-block__friend">
+            <img class="friends-block__friend__ava"
+              src="https://papik.pro/uploads/posts/2021-09/1631997549_6-papik-pro-p-krutie-avatarki-risunki-6.jpg"></img>
+            <div class="friends-block__friend__name">Carl</div>
+          </li>
+          <li class="friends-block__friend">
+            <img class="friends-block__friend__ava"
+              src="https://papik.pro/uploads/posts/2021-09/1631997549_6-papik-pro-p-krutie-avatarki-risunki-6.jpg"></img>
+            <div class="friends-block__friend__name">Muham</div>
+          </li>
+          <li class="friends-block__friend">
+            <img class="friends-block__friend__ava"
+              src="https://papik.pro/uploads/posts/2021-09/1631997549_6-papik-pro-p-krutie-avatarki-risunki-6.jpg"></img>
+            <div class="friends-block__friend__name">Rock</div>
+          </li>
+          <li class="friends-block__friend">
+            <img class="friends-block__friend__ava"
+              src="https://papik.pro/uploads/posts/2021-09/1631997549_6-papik-pro-p-krutie-avatarki-risunki-6.jpg"></img>
+            <div class="friends-block__friend__name">Carlson</div>
+          </li>
+          <li class="friends-block__friend">
+            <img class="friends-block__friend__ava"
+              src="https://papik.pro/uploads/posts/2021-09/1631997549_6-papik-pro-p-krutie-avatarki-risunki-6.jpg"></img>
+            <div class="friends-block__friend__name">Ben</div>
+          </li>
+          <li class="friends-block__friend">
+            <img class="friends-block__friend__ava"
+              src="https://papik.pro/uploads/posts/2021-09/1631997549_6-papik-pro-p-krutie-avatarki-risunki-6.jpg"></img>
+            <div class="friends-block__friend__name">Alex</div>
+          </li>
+        </ul>
+      </div>
+
       <div class="profile-description">
         <span class="profile-description__name"> Alexander Vasileuski</span>
-        <span class="profile-description__depiction"><span style="color: rgb(156, 156, 156) ;">Status:</span> Good Morining</span>
+        <span class="profile-description__depiction"><span style="color: rgb(156, 156, 156) ;">Status:</span> Good
+          Morining</span>
         <span class="profile-description__title">Social networks:</span>
         <!-- <ProfileStatus status={props.status} updateStatus={props.updateStatus} /> -->
         <ul class="profile-description__networks_block">
@@ -78,13 +132,13 @@
           <li class="profile-description__networks_element"> instagram: {props.profile.contacts.instagram} </li>
           <li class="profile-description__networks_element"> github: {props.profile.contacts.github} </li>
         </ul>
-        <div>12314</div>
+        <div class="profile-description__job-info">Searching for a job:</div>
       </div>
-      
+
       <div class="create-post">
         <div class="create-post__new-post">Create post</div>
         <div class="create-post__textarea__wrapper">
-          <textarea class="create-post__textarea" placeholder='Enter text' name="" id="" ></textarea>
+          <textarea class="create-post__textarea" placeholder='Enter text' name="" id=""></textarea>
         </div>
         <button class="create-post__submit-post--button">Publish</button>
       </div>
@@ -93,12 +147,28 @@
         <div className={s.all_info}>
           <div class="posts__my-posts">My posts</div>
         </div>
+        <section class="posts__postItem">
+          <div class="postItem__avatarName">
+            <div class="postItem__photo"> <img src='https://clck.ru/wh9YD' alt='profilePhoto'></img></div>
+            <div class="postItem__aboutPost">
+              <span>Alexander Vasilevsky</span>
+              <span>10.09.2000</span>
+            </div>
+          </div>
+          <div class="postItem__content">
+            asfasfasfasfasfasfasfafafasfsafsafsafdsdgasfasdfsadfasdgasfasfasfasfasfasfasfafafasfsafsafsafdsdgasfasdfsadfasdg
+          </div>
+          <div class="postItem__likes">likes -{ props.likes}- </div>
+        </section>
       </div>
-    
+      <div>
+        
+
     </div>
-    </div>
-    </div>
+  </div>
+  </div>
 </body>
+
 </html>
 
 
